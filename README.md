@@ -77,8 +77,3 @@ Projeto criado por Felipe Rodrigues para estudo e prática de automação com Cy
 
 ## 📝 Licença
 Este projeto é apenas para fins de estudo e não possui licença oficial.
-
-
-## 📝 Licença
-
-Este projeto é apenas para fins de estudo e não possui licença oficial.
