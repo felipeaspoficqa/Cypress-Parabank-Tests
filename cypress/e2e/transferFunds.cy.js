@@ -1,10 +1,10 @@
-import login from "../pages/login"
 import transferFunds from "../pages/transferFunds"
 
 describe('Testes de realização de transferencias', () => {
 
     beforeEach(() => {
-        login.fazerLoginComSucesso()
+        cy.visitar()
+        cy.submeterLogin('felip99', '123456')
     })
 
     afterEach(() => {

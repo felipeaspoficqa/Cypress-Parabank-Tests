@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('visitar', ()=>{
+  cy.visit('https://parabank.parasoft.com/parabank/index.htm')
+})
+
+Cypress.Commands.add('submeterLogin', (user, senha)=>{
+  cy.get('input[name="username"]').type(user)
+  cy.get('input[name="password"]').type(senha)
+
+  cy.get('input[value="Log In"]').click()
+})

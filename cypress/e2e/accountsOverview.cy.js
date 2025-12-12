@@ -1,10 +1,10 @@
-import login from "../pages/login"
 import accountsOverview from "../pages/accountsOverview"
 
 describe('Teste nas contas criadas pelo usuario', () => {
 
     beforeEach(() => {
-        login.fazerLoginComSucesso()
+        cy.visitar()
+        cy.submeterLogin('felip99', '123456')
         accountsOverview.acessarContasDoUsuario()
     })
 

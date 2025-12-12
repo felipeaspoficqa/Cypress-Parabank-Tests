@@ -5,7 +5,7 @@ class transferencias{
     }
 
     preencherQuantiaASerTransferida(){
-        cy.get('input[id="amount"]').type('1')
+        cy.get('#amount').type('1')
     }
 
     selecionarContaDeOrigem(){
